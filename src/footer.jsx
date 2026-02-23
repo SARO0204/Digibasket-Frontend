@@ -3,7 +3,7 @@ function footer() {
     <div className="end-box">
       <h4>Look there for a location !!</h4>
 
-      <img src="/src/assets/spiderman-image.webp"></img>
+      <img src="/spiderman-image.webp"></img>
 
       <h3>Location: 35/1, Basha Street, Choolaimedu, Chennai-600094</h3>
 
@@ -18,7 +18,7 @@ function footer() {
       ></iframe>
 
       <div className="end-logo">
-        <img src="/src/assets/digibasket-logo.webp" />
+        <img src="/digibasket-logo.webp" />
 
         <h2>DIGIBASKET</h2>
         <p>© 2026 DigiBasket Pvt Ltd</p>
