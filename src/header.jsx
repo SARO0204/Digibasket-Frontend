@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src="/src/assets/Digibasket-Logo.webp" alt="logo" />
+        <img src="/src/assets/digibasket-logo.webp" alt="logo" />
         <h3>DIGIBASKET</h3>
       </div>
 

@@ -18,7 +18,7 @@ function footer() {
       ></iframe>
 
       <div className="end-logo">
-        <img src="/src/assets/Digibasket-Logo.webp" />
+        <img src="/src/assets/digibasket-logo.webp" />
 
         <h2>DIGIBASKET</h2>
         <p>© 2026 DigiBasket Pvt Ltd</p>
