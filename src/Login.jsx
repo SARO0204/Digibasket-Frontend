@@ -29,7 +29,7 @@ function Login() {
   return (
     <div className="login_background">
       <img
-        src="/src/assets/Login Background.avif"
+        src="/src/assets/Login-Background.avif"
         alt=""
         style={{ position: "relative" }}
       />
