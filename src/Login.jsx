@@ -16,7 +16,7 @@ function Login() {
 
       if (res.ok) {
         alert("Login Successful");
-        window.location.href = "/";   // home page
+        window.location.href = "/"; 
       } else {
         alert(data.message);
       }
@@ -29,7 +29,7 @@ function Login() {
   return (
     <div className="login_background">
       <img
-        src="/src/assets/login-background.avif"
+        src="/login-background.avif"
         alt=""
         style={{ position: "relative" }}
       />
@@ -65,7 +65,7 @@ function Login() {
         <a href="/register">New to Digibasket? Create an account</a>
 
         <img
-          src="/src/assets/Digibasket Logo.webp"
+          src="/digibasket-logo.webp"
           alt=""
           style={{ position: "relative" }}
         />
