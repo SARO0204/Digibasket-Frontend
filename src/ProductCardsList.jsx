@@ -11,26 +11,26 @@ import cosuit1 from "./assets/Cosuit1.jpg";
 import cosuit2 from "./assets/Cosuit2.jpg";
 import cosuit3 from "./assets/Cosuit3.jpg";
 import cosuit4 from "./assets/Cosuit4.jpg";
-import polo1 from "./assets/Polo shirt1.jpg";
-import polo2 from "./assets/Polo shirt2.jpg";
-import polo3 from "./assets/Polo shirt3.jpg";
-import polo4 from "./assets/Polo shirt4.jpg";
+import polo1 from "./assets/Polo-shirt1.jpg";
+import polo2 from "./assets/Polo-shirt2.jpg";
+import polo3 from "./assets/Polo-shirt3.jpg";
+import polo4 from "./assets/Polo-shirt4.jpg";
 import baggy1 from "./assets/Baggy1.jpg";
 import baggy2 from "./assets/Baggy2.jpg";
 import baggy3 from "./assets/Baggy3.jpg";
 import baggy4 from "./assets/Baggy4.jpg";
-import csk1 from "./assets/CSK Jersey1.jpg";
-import csk2 from "./assets/CSK Jersey2.jpg";
-import csk3 from "./assets/CSK Jersey3.jpg";
-import csk4 from "./assets/CSK Jersey4.jpg";
+import csk1 from "./assets/CSK-Jersey1.jpg";
+import csk2 from "./assets/CSK-Jersey2.jpg";
+import csk3 from "./assets/CSK-Jersey3.jpg";
+import csk4 from "./assets/CSK-Jersey4.jpg";
 import hoodie1 from "./assets/Hoodie1.jpg";
 import hoodie2 from "./assets/Hoodie2.jpg";
 import hoodie3 from "./assets/Hoodie3.jpg";
 import hoodie4 from "./assets/Hoodie4.jpg";
-import sweater1 from "./assets/Sweater 1.jpg";
-import sweater2 from "./assets/Sweater 2.jpg";
-import sweater3 from "./assets/Sweater 3.jpg";
-import sweater4 from "./assets/Sweater 4.jpg";
+import sweater1 from "./assets/Sweater1.jpg";
+import sweater2 from "./assets/Sweater2.jpg";
+import sweater3 from "./assets/Sweater3.jpg";
+import sweater4 from "./assets/Sweater4.jpg";
 import { useState, useEffect } from "react";
 
 function ProductCardsList() {
@@ -137,11 +137,12 @@ function ProductCardsList() {
     console.log("Use Effect Called");
   }, []);
 
-  useEffect(() => {
-    fetch("http://localhost:5000/api/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+useEffect(() => {
+  fetch(`${import.meta.env.VITE_API_URL}/api/products`)
+    .then((res) => res.json())
+    .then((data) => setProducts(data))
+    .catch((err) => console.error("API ERROR:", err));
+}, []);
 
   function handleDelete(id) {
     const newProducts = products.filter((product) => product._id !== id);
